@@ -24,7 +24,6 @@ Type **only** what happens (a sale, a delivery, a breakage). Everything else is 
 ```
 data/       10 CSVs (star schema)  ·  sql/ schema + 7 queries  ·  python/ analysis.py
 docs/       01 Project documentation
-            02 Daily notebook guide
 workbooks/  AkatePilot_DEMO_Anonymised.xlsx      <- 61 days of synthetic data (safe to share)            
 ```
 
