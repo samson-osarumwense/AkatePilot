@@ -1,0 +1,2 @@
+store_id,store_name,store_type,country,opening_hours,sunday_pattern,power_source,monthly_rent,paid_staff,currency
+STR-001,AKATE BAR,BAR & DRINKS SHOP,NIGERIA,"OPENS 8-10AM, CLOSES 9-11PM, MONDAY - SUNDAY",OPENS IN THE AFTERNOON,SOLAR,0,0,NGN
