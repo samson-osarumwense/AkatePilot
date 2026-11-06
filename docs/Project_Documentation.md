@@ -1,4 +1,4 @@
-# 01 · Project Documentation — AkatePilot
+# Project Documentation — AkatePilot
 
 ### A spreadsheet-based sales, inventory management and business intelligence system for a small retail bar in Nigeria.
 
@@ -522,7 +522,7 @@ The following were reproduced:
 
 ### 9.4 Live-entry testing
 
-The blank template was tested using realistic entry scenarios.
+A blank template was tested using realistic entry scenarios.
 
 The tests included:
 
