@@ -22,17 +22,13 @@ Type **only** what happens (a sale, a delivery, a breakage). Everything else is 
 
 ## What's in this repo
 ```
-workbooks/  AkatePilot_Akate-Bar_TEMPLATE.xlsx   <- blank, ready for real use
-            AkatePilot_DEMO_Anonymised.xlsx      <- 61 days of synthetic data (safe to share)
 data/       10 CSVs (star schema)  ·  sql/ schema + 7 queries  ·  python/ analysis.py
-docs/       01 Project documentation · 02 Security, backup & licensing
-            03 Pricing, pitch & publishing       · 04 Roadmap & upgrades · 05 Daily notebook guide
+docs/       01 Project documentation
+            02 Daily notebook guide
+workbooks/  AkatePilot_DEMO_Anonymised.xlsx      <- 61 days of synthetic data (safe to share)            
 ```
 
-## Quick start
-1. Open the **TEMPLATE** in Excel (desktop or mobile) and save it to OneDrive (AutoSave on).
-2. Read **START HERE**. Fill prices on **PRODUCTS**, opening stock on **STOCK IN-OUT**.
-3. Record sales daily on **SALES**. Open **DASHBOARD**.
+## Quick view
 Try the **DEMO** first to see a full dashboard.
 
 ## Skills demonstrated
@@ -42,4 +38,4 @@ Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/
 Built with formulas only (no VBA) so it is safe on phones and in Google Sheets. Consequences: input columns cannot be force-capitalised on typing (a cleaned copy is created beside them); "pivot tables" are live formula tables, not native PivotTable objects (native pivots do not auto-refresh); capacity is ~8,000 sales lines per file (about a year) — start a new yearly file after that. Demo prices and pack sizes are **illustrative assumptions**.
 
 ## Licence
-© 2026 — All rights reserved. The DEMO workbook and CSVs may be viewed and shared for portfolio purposes; the TEMPLATE and formula logic may not be resold or redistributed. See `LICENSE`.
+© 2026 — All rights reserved. The DEMO workbook and CSVs may be viewed and shared for portfolio purposes. See `LICENSE`.
