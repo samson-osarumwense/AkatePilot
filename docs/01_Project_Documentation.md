@@ -1,14 +1,14 @@
 # 01 · Project Documentation — AkatePilot
 
 ## 1. Name
-**AkatePilot** — *Akate* (the bar) + *Pilot* (an autopilot for stock & sales). A web search found no existing product with this exact name; still check GitHub, domain names and the Nigerian trademark registry before using it commercially.
+**AkatePilot** — *Akate* (the bar) + *Pilot* (an autopilot for stock & sales).
 
 ## 2. Business context (from the owner's brief)
 Open 8–10am to 9–11pm daily (Sundays: afternoon start) · solar powered, no rent, no paid staff · 44 products (alcoholic & soft drinks in bottles/cans, bottled & sachet water, packaging) · payments: cash, transfer, card, credit · bought as bags/cartons/packs/crates/pieces from several suppliers · sold wholesale (full/half) and retail (piece) · some fixed, some variable prices · breakage, leakage and personal consumption happen · sachet water is loaded 3 bags at a time, so **bags**, not sachets, are recorded.
 
 ## 3. Problem → Solution
 **Problem:** nothing recorded → unknown profit, loss and stock.
-**Solution:** a notebook-to-workbook pipeline. Staff write a line per sale; one evening entry per line gives automatic profit, stock, customers, credit, reports and a dashboard.
+**Solution:** a notebook-to-workbook pipeline. User write a line per sale; one evening entry per line gives automatic profit, stock, customers, credit, reports and a dashboard.
 
 ## 4. Architecture
 ```
@@ -85,7 +85,7 @@ See header row of each sheet. Export columns (snake_case) are listed in `sql/sch
 * Independent pandas check: sales total, profit, weighted cost and stock for all 45 products reproduced exactly (max difference 0).
 * SQL load of the CSVs reproduced monthly sales and stock reconciliation (difference 0).
 * Live-entry test in the blank template: messy typing (lowercase, extra spaces) cleaned; new product, supplier and customer auto-created; wholesale pieces, credit owed and daily stock all correct.
-* **Not tested:** opening in Google Sheets and Excel mobile — please test on your devices and report any function that does not carry over (all functions used are Excel-2019+ standard; `MINIFS/MAXIFS` are supported by Sheets).
+* **Not Tested:** opening in Google Sheets and Excel mobile — please test on your devices and report any function that does not carry over (all functions used are Excel-2019+ standard; `MINIFS/MAXIFS` are supported by Sheets).
 
 ## 10. Known limits & maintenance
 Capacity: 8,000 sales lines, 1,500 stock movements, 700 expenses, 1,000 repayments, 150+50 products, 300 customers, 100 suppliers per file — save a fresh yearly copy (clear yellow cells, keep closing stock as new *OPENING STOCK*). Don't sort or delete rows on data sheets (IDs are position-based) — filter instead. Typing a customer name differently (e.g. "MR ADE" vs "ADE") creates two customers; pick from the drop-down.
@@ -97,4 +97,4 @@ All labels use UK English (*colour, programme, licence, organisation*), `₦` cu
 Load the 10 CSVs in `data/` (or the sheets `SALES`, `STOCK IN-OUT`, `PRODUCTS`, `CUSTOMERS`, `SUPPLIERS`, `DATES`, `STORE`, `EXPENSES`, `CREDIT`). Relationships: `Date ID`, `Product ID`, `Customer ID`, `Supplier ID`, `Store ID`. In Power BI mark `dim_date` as the date table. Suggested measures: `Sales = SUM(fact_sales[total_sales])`, `Gross Profit = SUM(fact_sales[profit])`, `Margin % = DIVIDE([Gross Profit],[Sales])`, `Stock Value = SUM(snapshot_stock[stock_value_at_cost])`. `sql/schema.sql` + `sample_queries.sql` and `python/analysis.py` (Pareto, RFM, simple demand forecast) are ready to run.
 
 ## 13. Anonymisation of the dataset
-All data is synthetic (seeded generator): customers are `CUSTOMER 01…25`, suppliers are `SUPPLIER A–D`, prices/pack sizes are illustrative, no phone numbers or addresses. The brand names are real product names supplied in the brief; remove or mask them if you publish for a client under NDA.
+All data is synthetic (seeded generator): customers are `CUSTOMER 01…25`, suppliers are `SUPPLIER A–D`, prices/pack sizes are illustrative, no phone numbers or addresses. The brand names are real product names collected manually; remove or mask them if you publish for a client under NDA.
