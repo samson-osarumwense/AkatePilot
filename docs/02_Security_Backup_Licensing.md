@@ -1,33 +1,81 @@
 # 02 · Security, Backup, Access & Copyright
 
-*I am not a lawyer — confirm copyright and contract points with a qualified Nigerian IP/contract lawyer.*
+*Legal note: This document provides practical guidance, not legal advice. Copyright, licensing and contract matters should be confirmed with a qualified Nigerian lawyer.*
 
-## A. Automatic saving, backup and sync (so a stolen or lost phone never loses data)
-1. Keep the live file **only** in OneDrive (Excel) or Google Drive (Sheets). Turn **AutoSave ON** (Excel top-left toggle). Every edit saves in seconds.
-2. Install the Excel app + OneDrive app on the owner's phone and laptop; sign in with the same account. Offline edits sync when data returns (important for power/network cuts).
-3. **Version history** (File → Info → Version History / Google "See version history") lets you undo wrong entries or tampering.
-4. **3-2-1 backup:** 3 copies, 2 places, 1 offsite. Live file (cloud) + weekly copy named `AkatePilot_Backup_YYYY-MM-DD.xlsx` to a second cloud or flash drive kept at home. Set a phone reminder every Sunday. Optional: Windows File History / OneDrive "Personal Vault".
-5. Lost device: sign in to account.microsoft.com → *Devices* → mark lost / sign out everywhere; change the password.
+## A. Automatic Saving, Backup & Sync
 
-## B. Access: you = admin, others = limited
-| Role | Who | How |
-|---|---|---|
-| **Admin / Owner** | you only | Owns the cloud account and file; holds the sheet-protection password |
-| **Editor** | your mum and trusted family | Share → *Can edit*, **specific people only** (no "anyone with link") |
-| **Viewer** | an accountant, a client | Share → *Can view* (and "block download" where available) |
-1. Turn on **2-step verification** on the owning Microsoft/Google account; use a long passphrase, store it in a password manager.
-2. **Protect structure:** Review → Protect Workbook (password) so nobody can delete or rename sheets. Report sheets and the dashboard are already protected (no password); add a password via Review → Unprotect Sheet → Protect Sheet.
-3. **Lock formula columns on data sheets:** select the yellow columns → Format Cells → Protection → untick *Locked*; then Review → Protect Sheet (password, allow *Use AutoFilter* and *Select unlocked cells*). Editors can then type only in yellow cells and cannot overwrite formulas. (Do this *after* set-up, on SALES, STOCK IN-OUT, CREDIT, EXPENSES.)
-4. Use **file encryption** for the backup copy: File → Info → Protect Workbook → Encrypt with Password.
-5. Never email the live file; share a link. Remove people who stop helping.
-6. Each helper should have their **own** login (not a shared one) so version history shows who changed what.
-7. Optional audit habit: staff write their initials in the notebook beside each sale/stock line.
+AkatePilot is designed to preserve business records and minimise the risk of data loss.
 
-## C. Copyright & protecting your work
-* Copyright exists automatically when you create original work; in Nigeria you can also **register** works with the Nigerian Copyright Commission (NCC) for stronger evidence — check current procedure and fees.
-* Put © and your name in: the START HERE and DASHBOARD sheets (already included — replace with your name), README, LICENSE, document properties (File → Info → Properties → Author) and the file name.
-* **Publish only the DEMO** (synthetic data) on GitHub/Upwork. Sell/deliver the formula-live TEMPLATE under a written licence (see LICENSE) or a client contract. For clients, deliver a *protected* copy (structure password) and keep the unprotected master.
-* Keep evidence of authorship: dated drafts, Git commit history (every commit is time-stamped), your OneDrive version history, and emailed copies to yourself.
-* Add a licence line in every client contract: client owns *their data*; you keep the *template design, formulas and documentation* (or grant a limited licence).
-* Watermark idea: a discreet name/ID in the footer of printed dashboards.
-* Remember the owner's business data (sales, customers' names/phones) is personal data: keep it private and follow the Nigeria Data Protection Act principles (collect only what you need, keep it secure).
+1. **Cloud storage:** The live workbook should be stored in OneDrive or Google Drive, with AutoSave and synchronisation enabled.
+2. **Device access:** The business owner should have the relevant Excel and cloud-storage applications installed on their phone and laptop.
+3. **Version history:** Previous workbook versions should be available for recovering accidental changes or investigating suspicious edits.
+4. **3-2-1 backup:** Maintain three copies across two storage locations, with one offline copy. Create a weekly backup named `AkatePilot_Backup_YYYY-MM-DD.xlsx`.
+5. **Lost device:** If a device is stolen or misplaced, the owner should secure the associated account, revoke access where possible and change the password.
+
+## B. Access & User Protection
+
+AkatePilot uses a simple access structure to protect business records and workbook functionality.
+
+| Role              | Assigned user                             | Permission                                                |
+| ----------------- | ----------------------------------------- | --------------------------------------------------------- |
+| **Admin / Owner** | Developer or designated owner             | Full control, account management and workbook maintenance |
+| **Editor**        | Business owner and trusted family members | Enter sales, purchases, expenses and other transactions   |
+| **Viewer**        | Accountant or authorised reviewer         | View reports and dashboards                               |
+
+**Recommended safeguards:**
+
+- Enable two-step verification on the account hosting the workbook.
+- Use individual accounts rather than shared login credentials.
+- Restrict sharing to specific authorised people.
+- Protect workbook structure against accidental deletion or modification.
+- Lock formula cells and leave designated yellow input cells editable.
+- Encrypt sensitive backup copies with a separate password.
+- Use version history and notebook initials to support transaction accountability.
+
+*Note: Spreadsheet protection prevents accidental changes but does not replace account security or file encryption.*
+
+## C. Copyright & Intellectual Property
+
+AkatePilot is an original spreadsheet-based business management and analytics solution developed by **Samson Odion Osarumwense**.
+
+Copyright and ownership measures include:
+
+- Displaying `© 2026 Samson Odion Osarumwense` in the workbook, README and relevant documentation.
+- Maintaining dated drafts, GitHub commits and cloud version history as evidence of development.
+- Considering copyright registration with the Nigerian Copyright Commission (NCC).
+- Publishing only the synthetic-data DEMO on GitHub and retaining the formula-live TEMPLATE for authorised commercial use.
+- Using written licences or client agreements to define permitted use and ownership.
+- Retaining ownership of the reusable template design, formulas and documentation unless otherwise agreed in writing.
+
+**Suggested ownership principle:** The business owner retains ownership of their business data, while the developer retains ownership of the original AkatePilot design, formulas and reusable documentation, subject to agreed licensing terms.
+
+Official reference: [Nigerian Copyright Commission](https://copyright.gov.ng/)
+
+## D. Privacy & Data Protection
+
+AkatePilot may contain customer names, telephone numbers, sales records, credit balances and supplier information.
+
+To protect this information:
+
+- Collect only information necessary for business operations.
+- Restrict access to authorised users.
+- Keep live records and backups securely stored.
+- Never publish real customer or supplier information in public demonstrations.
+- Use synthetic data in the GitHub DEMO.
+- Handle personal information in line with the Nigeria Data Protection Act.
+
+Official reference: [Nigeria Data Protection Commission](https://ndpc.gov.ng/)
+
+## E. Security & Maintenance Checklist
+
+- [ ] Cloud storage and automatic synchronisation enabled.
+- [ ] Two-step verification activated.
+- [ ] User permissions reviewed.
+- [ ] Workbook structure and formula cells protected.
+- [ ] Weekly backups created and verified.
+- [ ] Backup encryption enabled.
+- [ ] Copyright and developer information included.
+- [ ] Public demo checked for real business or customer data.
+- [ ] Unnecessary user access removed.
+
+**AkatePilot's guiding principle:** Keep business records secure, preserve reliable backups, control access and protect the intellectual property behind the system.
