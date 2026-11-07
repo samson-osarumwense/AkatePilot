@@ -21,14 +21,18 @@ Type **only** what happens (a sale, a delivery, a breakage). Everything else is 
 **Highlights:** 44-product catalogue with keyword-rule auto-categorisation · retail / half-pack / full-pack wholesale maths · sachet water in **bags** · credit & repayments · breakage / leakage / personal-use cost · expenses & owner drawings · live "pivot-style" reports · interactive dashboard (period + product-type selectors) · rule-based **business recommendations** · opening/closing stock for any day · star-schema CSV/SQL export for Python & Power BI/Tableau.
 
 ## What's in this repo
-```
-data/       10 CSVs (star schema)  ·  sql/ schema + 7 queries  ·  python/ analysis.py
-docs/       01 Project documentation
-workbooks/  AkatePilot_DEMO_Anonymised.xlsx      <- 61 days of synthetic data (safe to share)            
-```
+data/ 10 CSVs (star schema)  
+
+docs/ Project documentation
+
+python/ analysis.py
+
+sql/ schema + 7 queries  
+
+workbooks/ AkatePilot_DEMO_Anonymised.xlsx <- 61 days of synthetic data (safe to share)           
 
 ## Quick view
-Try the **DEMO** first to see a full dashboard.
+Try the **[DEMO](workboooks/AkatePilot_DEMO_Anonymised.xlsx)** first to see a full dashboard.
 
 ## Skills demonstrated
 Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/INDEX-MATCH/SUMPRODUCT, dynamic ranking without macros, data validation, conditional formatting, charts) · business logic (inventory valuation, margin, shrinkage, credit control, RFM-style segmentation) · UX for low-digital-literacy users · documentation · SQL & Python hand-off.
@@ -37,4 +41,4 @@ Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/
 Built with formulas only (no VBA) so it is safe on phones and in Google Sheets. Consequences: input columns cannot be force-capitalised on typing (a cleaned copy is created beside them); "pivot tables" are live formula tables, not native PivotTable objects (native pivots do not auto-refresh); capacity is ~8,000 sales lines per file (about a year) — start a new yearly file after that. Demo prices and pack sizes are **illustrative assumptions**.
 
 ## Licence
-© 2026 — All rights reserved. The DEMO workbook and CSVs may be viewed and shared for portfolio purposes. See `LICENSE`.
+© 2026 — All rights reserved. The DEMO workbook and CSVs may be viewed and shared for portfolio purposes.
