@@ -23,7 +23,7 @@ Type **only** what happens (a sale, a delivery, a breakage). Everything else is 
 ## What's in this repo
 data/ 10 CSVs (star schema)  
 
-docs/ Images + Project documentation
+docs/ AkatePilot_DEMO_Anonymised.pdf + Project documentation
 
 python/ analysis.py
 
@@ -32,7 +32,7 @@ sql/ schema + 7 queries
 workbooks/ AkatePilot_DEMO_Anonymised.xlsx <- 61 days of synthetic data (safe to share)           
 
 ## Quick view
-Try the **[DEMO](workbooks)** first to see the full workflow.
+Try the **[DEMO](docs/AkatePilot_DEMO_Anonymised.pdf)** first to see a full dashboard.
 
 ## Skills demonstrated
 Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/INDEX-MATCH/SUMPRODUCT, dynamic ranking without macros, data validation, conditional formatting, charts) · business logic (inventory valuation, margin, shrinkage, credit control, RFM-style segmentation) · UX for low-digital-literacy users · documentation · SQL & Python hand-off.
