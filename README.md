@@ -32,7 +32,7 @@ sql/ schema + 7 queries
 workbooks/ AkatePilot_DEMO_Anonymised.xlsx <- 61 days of synthetic data (safe to share)           
 
 ## Quick view
-Try the **[DEMO](workboooks/AkatePilot_DEMO_Anonymised.xlsx)** first to see the full workflow.
+Try the **[DEMO](workbooks)** first to see the full workflow.
 
 ## Skills demonstrated
 Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/INDEX-MATCH/SUMPRODUCT, dynamic ranking without macros, data validation, conditional formatting, charts) · business logic (inventory valuation, margin, shrinkage, credit control, RFM-style segmentation) · UX for low-digital-literacy users · documentation · SQL & Python hand-off.
