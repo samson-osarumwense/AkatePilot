@@ -38,7 +38,8 @@ Try the **[DEMO](docs/AkatePilot_DEMO_Anonymised.pdf)** first to see a full dash
 Data modelling (star schema, surrogate keys) · advanced Excel (SUMIFS/COUNTIFS/INDEX-MATCH/SUMPRODUCT, dynamic ranking without macros, data validation, conditional formatting, charts) · business logic (inventory valuation, margin, shrinkage, credit control, RFM-style segmentation) · UX for low-digital-literacy users · documentation · SQL & Python hand-off.
 
 ## Honest limitations
-Built with formulas only (no VBA) so it is safe on phones and in Google Sheets. Consequences: input columns cannot be force-capitalised on typing (a cleaned copy is created beside them); "pivot tables" are live formula tables, not native PivotTable objects (native pivots do not auto-refresh); capacity is ~8,000 sales lines per file (about a year) — start a new yearly file after that. Demo prices and pack sizes are **illustrative assumptions**.
+Built with formulas only (no VBA) so it is safe on phones and in Google Sheets. 
+Consequences: input columns cannot be force-capitalised on typing (a cleaned copy is created beside them); "pivot tables" are live formula tables, not native PivotTable objects (native pivots do not auto-refresh); capacity is ~8,000 sales lines per file (about a year) — start a new yearly file after that. Demo prices and pack sizes are **illustrative assumptions**.
 
 ## Licence
 © 2026 — All rights reserved. The DEMO workbook and CSVs may be viewed and shared for portfolio purposes.
